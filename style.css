@@ -58,6 +58,13 @@ nav{
 .button a{
     color: white;
 }
+.button.mobile-btn {
+    display: none;
+}
+.menu ul li i {
+  display: none;
+}
+
 /* ..................................Hero Section Start........................................ */
 .hero{
     background: linear-gradient(90deg,rgba(255, 198, 208, 1) 0%, rgba(255, 226, 231, 1) 100%);
@@ -177,6 +184,7 @@ nav{
     padding: 10px 20px;
     margin-bottom: 26px;
     text-transform: capitalize;
+    border-radius: 6px;
 }
 .next h2{
     width: 1240px;
@@ -201,7 +209,6 @@ nav{
     padding: 25px 50px;
 }
 .one h3{
-    /* width: 258px; */
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -211,4 +218,328 @@ nav{
 .one p{
     font-size: 18px;
     line-height: 30px;
+}
+/* .......................responsive start............................... */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 2000;
+}
+@media (max-width: 991px) {
+    .container{
+    padding-left: 16px;
+    padding-right: 19px;
+}
+  nav {
+    background-color: white;
+    position: relative;
+    z-index: 1000;
+  }
+  .menu ul {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .menu ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu ul li i {
+    display: inline-block; /* Show icons in responsive mode */
+    color: #282828;
+    font-size: 18px;
+  }
+
+  /* Active item (Home) */
+  .menu ul li.active a,
+  .menu ul li.active i {
+    color: var(--primaricolor);
+    font-weight: 600;
+  }
+  .menu.active {
+    display: flex;
+  }
+  .desktop-btn {
+    display: none;
+  }
+  .mobile-btn {
+    display: block;
+    margin-top: 25px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffe3e8;
+    position: absolute;
+    top: 83px;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  }
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu.active .mobile-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.menu.active .mobile-btn a {
+  display: block;
+  width: 100%;
+}
+
+
+}
+/* responsive part */
+@media (max-width: 575px) {  
+  /* ............Responsive Hero part................ */
+  .main{
+    flex-direction: column;
+    gap: 0px;
+  }
+  .title {
+	width: auto;
+}
+.title h2 {
+	font-size: 34px;
+	line-height: 48px;
+	padding-top: 10px;
+	padding-bottom: 24px;
+	text-align: center;
+}
+.title-img {
+	display: none;
+}
+.title p {
+	width: auto;
+	margin-bottom: 24px;
+}
+.buttons {
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
+	align-items: center;
+}
+  .buttons .resume,
+  .buttons .button {
+    width: fit-content;
+    max-width: 100%;
+  }
+  .right {
+	margin-left: 21px;
+}
+.hero-img img{
+	width: 52%;
+}
+.rating{
+    padding: 12px 15px;
+    top: 296px;
+    left: -15px;
+}
+.rating h2 {
+	font-size: 22px;
+}
+.rating p {
+	font-size: 14px;
+}
+.online {
+	padding: 9px 6px;
+    bottom: 35.57px;
+    right: 300px;
+}
+.online img {
+	width: 36px;
+}
+.online h3 {
+	font-size: 18px;
+}
+.online p {
+	font-size: 11px;
+}
+/* ..................Resposive resume start..................... */
+.next h2 {
+	width: auto;
+	font-size: 30px;
+	line-height: 40px;
+}
+.cards {
+	margin-top: 26px;
+	gap: 26px;
+	flex-direction: column;
+}
+}
+/* ..................sm device................. */
+@media (min-width: 576px) and (max-width: 767px) {
+   .main {
+	gap: 0px;
+	display: flex;
+	flex-direction: column;
+}
+.title h2 {
+	font-size: 50px;
+	padding-top: 45px;
+	padding-bottom: 27px;
+	text-align: center;
+	width: 510px;
+	line-height: 62px;
+}
+    .hero-img img {
+	width: 70%;
+    margin-left: 40px;
+}
+.rating {
+	padding: 20px 15px;
+	top: 367px;
+	left: 15px;
+}
+.rating h2 {
+	width: 60px;
+	font-size: 40px;
+	line-height: 67px;
+}
+.title-img {
+	display: none;
+}
+.rating p {
+	font-size: 18px;
+}
+.online img {
+	width: 50px;
+}
+.online {
+	padding: 12px 13px;
+	bottom: 35.57px;
+	right: 139px;
+}
+.online h3 {
+	font-size: 22px;
+}
+.online p {
+	font-size: 15px;
+}
+/* ............resume responsive............... */
+.next h2 {
+	width: auto;
+	font-size: 39px;
+	line-height: 52px;
+}
+.cards {
+	margin-top: 40px;
+	gap: 24px;
+	flex-direction: column;
+}
+}
+/* .................md device.................... */
+@media (min-width: 768px) and (max-width: 991px) {
+    .main {
+	gap: 46px;
+	flex-direction: column;
+	margin-top: -80px;
+}
+.right {
+	margin-left: 65px;
+}
+.next h2 {
+	width: auto;
+	font-size: 43px;
+}
+.cards {
+	gap: 20px;
+	flex-wrap: wrap;
+}
+}
+/* .................lg device.................... */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .button.mobile-btn {
+	display: none;
+}
+.main{
+    padding-bottom: 50px;
+}
+.title {
+	width: 450px;
+}
+.title h2 {
+	font-size: 60px;
+}
+.title-img {
+	display: none;
+}
+.hero-img img {
+	width: 377px;
+	padding-right: 25px;
+}
+.right {
+	width: 40%;
+}
+.rating h2 {
+	font-size: 50px;
+}
+.rating p {
+	font-size: 20px;
+}
+.rating {
+	top: 311px;
+	left: -89px;
+	padding: 12px 9px;
+}
+.online img {
+	width: 37px;
+}
+.online h3 {
+	font-size: 27px;
+}
+.online p {
+	font-size: 14px;
+}
+.online {
+	bottom: 226.57px;
+	right: 23px;
+	padding: 6.71px 8.33px;
+}
+.next h2 {
+	width: auto;
+	font-size: 45px;
+	line-height: 60px;
+}
+.cards {
+	margin-top: 50px;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-left: 155px;
+}
+}
+/* .................xl device.................... */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    nav .container {
+	padding: 0 5px;
+}
+       .button.mobile-btn {
+	display: none;
+}
+.right {
+	width: 600px;
+	padding-top: 90px;
+	margin-right: 48px;
+}
+.cards {
+	flex-wrap: wrap;
+}
 }
