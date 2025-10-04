@@ -79,6 +79,14 @@ nav{
 .title h2 .span{
     color: var(--primaricolor);
 }
+.heading {
+    position: relative;
+}
+.title-img{
+    position: absolute;
+    bottom: 105px;
+    left: 0;
+}
 .title p{
     width: 485px;
     font-size: 16px;
@@ -95,15 +103,65 @@ nav{
     color: var(--primaricolor);
     font-size: 18px;
     font-weight: 500;
-    border: 1px solid var(--primaricolor);
+    border: 1px solid #FC4E6A;
+   box-shadow: 4px 0px 12px rgba(250, 18, 57, 0.58);
 }
 .resume a{
     color: var(--primaricolor);
     border: 1px;
 }
+.resume:hover{
+    background-color: var(--primaricolor);
+    box-shadow: none;
+}
+.resume a:hover{
+    color: white;
+}
 .right{
     width: 633px;
     padding-top: 90px;
+    position: relative;
+}
+.rating {
+    position: absolute;
+    top: 482px;
+    left: -30px;
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 10px;
+    gap: 20px;
+}
+.rating h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    color: #1CB098;
+}
+.rating p{
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 11px;
+}
+.stars{
+    color: #FFAB00;
+    gap: 4px;
+}
+.online{
+    background-color: white;
+    position: absolute;
+    bottom: 41.57px;
+    right: 0;
+    border-radius: 10px;
+    padding: 26.71px 23.33px;
+    gap: 20px;
+}
+.online h3{
+    font-weight: 800;
+    font-size: 30px;
+}
+.online p{
+    font-weight:500;
+    font-size: 17px;
 }
 /* ...........................resume Start.................................. */
 .next{
