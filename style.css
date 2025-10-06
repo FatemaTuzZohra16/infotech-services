@@ -234,8 +234,6 @@ nav{
     width: 125.61px; 
     height: auto;
   }
-
-  /* hamburger এর একটু gap দিতে চাইলে */
   .navbar-toggler {
     margin-left: 8px; 
   }
@@ -400,7 +398,7 @@ nav{
 /* ................. */
 .next h2 {
 	width: auto;
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 40px;
 }
 .cards {
