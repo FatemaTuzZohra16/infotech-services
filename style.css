@@ -100,7 +100,8 @@ nav{
     line-height: 34px;
     text-transform: capitalize;
     margin-bottom: 38px;
-}.buttons{
+}
+.buttons{
     gap: 24px;
 }
 .resume{
@@ -125,7 +126,7 @@ nav{
     color: white;
 }
 .right{
-    width: 633px;
+    width: 633.87px;
     padding-top: 90px;
     position: relative;
 }
