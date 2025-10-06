@@ -64,7 +64,9 @@ nav{
 .menu ul li i {
   display: none;
 }
-
+li svg.icon {
+  display:none;
+}
 /* ..................................Hero Section Start........................................ */
 .hero{
     background: linear-gradient(90deg,rgba(255, 198, 208, 1) 0%, rgba(255, 226, 231, 1) 100%);
@@ -238,6 +240,9 @@ nav{
   .navbar-toggler {
     margin-left: 8px; 
   }
+  li svg.icon {
+  display: inline-block;
+}
 }
 @media (max-width: 991px) {
     .container{
@@ -314,6 +319,9 @@ nav{
 .menu.active .mobile-btn a {
   display: block;
   width: 100%;
+}
+li svg.icon {
+  display: inline-block;
 }
 }
 
