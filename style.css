@@ -118,11 +118,12 @@ li svg.icon {
 }
 .resume a{
     color: var(--primaricolor);
-    border: 1px;
+    border: 1px; 
 }
 .resume:hover{
     background-color: var(--primaricolor);
     box-shadow: none;
+    color: white;
 }
 .resume a:hover{
     color: white;
@@ -190,11 +191,12 @@ li svg.icon {
     border-radius: 6px;
 }
 .next h2{
-    width: 1240px;
+    max-width: 1240px;
     font-weight: 600;
     font-size: 44px;
     line-height: 55px;
     text-transform: capitalize;
+    margin: 0 auto;
 }
 .next h2 span{
     color: var(--primaricolor);
@@ -361,6 +363,9 @@ li svg.icon {
   .buttons .button {
     width: fit-content;
     max-width: 100%;
+  }
+  .resume {
+    box-shadow: 2px 2px 8px rgba(250, 18, 57, 0.5);
   }
   .right {
 	width: auto;
