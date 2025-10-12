@@ -270,7 +270,7 @@ li svg.icon {
   .menu ul li i {
     display: inline-block; 
     color: #282828;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   /* Active item (Home) */
@@ -363,9 +363,6 @@ li svg.icon {
   .buttons .button {
     width: fit-content;
     max-width: 100%;
-  }
-  .resume {
-    box-shadow: 2px 2px 8px rgba(250, 18, 57, 0.5);
   }
   .right {
 	width: auto;
