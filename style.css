@@ -29,7 +29,7 @@ a{
     --headingFontSize:28px;
 }
 .container{
-    max-width: 1440px;
+    max-width: 1300px;
     margin: 0 auto;
 } 
 /* ...........................main css start.......................... */
@@ -72,10 +72,10 @@ li svg.icon {
     background: linear-gradient(90deg,rgba(255, 198, 208, 1) 0%, rgba(255, 226, 231, 1) 100%);
 }
 .main{
-    gap: 46px;
+    gap: 10px;
 }
 .title{
-    width: 620px;
+    width: 1117px;
 }
 .title h2{
     font-weight: 700;
@@ -120,20 +120,20 @@ li svg.icon {
     color: var(--primaricolor);
     border: 1px; 
 }
-.resume:hover{
+/* .resume:hover{
     background-color: var(--primaricolor);
     box-shadow: none;
     color: white;
-}
-.resume a:hover{
+} */
+/* .resume a:hover{
     color: white;
-}
+} */
 .right{
-    width: 633.87px;
+    width:100%;
     padding-top: 90px;
     position: relative;
 }
-.rating {
+/* .rating {
     position: absolute;
     top: 482px;
     left: -30px;
@@ -141,8 +141,8 @@ li svg.icon {
     padding: 20px 15px;
     border-radius: 10px;
     gap: 20px;
-}
-.rating h2{
+} */
+/* .rating h2{
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 64px;
@@ -156,8 +156,8 @@ li svg.icon {
 .stars{
     color: #FFAB00;
     gap: 4px;
-}
-.online{
+} */
+/* .online{
     background-color: white;
     position: absolute;
     bottom: 41.57px;
@@ -165,15 +165,15 @@ li svg.icon {
     border-radius: 10px;
     padding: 26.71px 23.33px;
     gap: 20px;
-}
-.online h3{
+} */
+/* .online h3{
     font-weight: 800;
     font-size: 30px;
 }
 .online p{
     font-weight:500;
     font-size: 17px;
-}
+} */
 /* ...........................resume Start.................................. */
 .next{
     padding-top: 50px;
@@ -298,7 +298,7 @@ li svg.icon {
     align-items: flex-start;
     background-color: #ffe3e8;
     position: absolute;
-    top: 83px;
+    top: 77px;
     left: 0;
     width: 100%;
     padding: 30px 20px;
@@ -329,7 +329,7 @@ li svg.icon {
 
 /* responsive part */
 @media (max-width: 400px) {
-    .main.flex.jb {
+    .main {
 	flex-direction: column;
     gap: 0;
 }
@@ -348,10 +348,10 @@ li svg.icon {
 	display: none;
 }
 .title p {
-	width: auto;
-	font-size: 13px;
+	width: 340px;
+	font-size: 16px;
 	line-height: 34px;
-	margin-bottom: 24px;
+	margin: 0 auto 24px;
 }
 .buttons {
 	flex-direction: column;
@@ -372,16 +372,15 @@ li svg.icon {
 	margin-left: 8px;
 }
 .hero-img img {
-	width: 253px;
-	height: 345px;
+	width: 100%;
 }
-.rating {
+/* .rating {
 	padding: 12px 13.44px;
 	top: 211px;
 	left: -21px;
     gap: 8px;
-}
-.rating h2 {
+} */
+/* .rating h2 {
 	font-size: 22px;
 }
 .rating p {
@@ -399,13 +398,13 @@ li svg.icon {
 }
 .online h3 {
 	font-size: 18px;
-}
-.online p {
+} */
+/* .online p {
 	font-size: 11px;
 }
 .online img {
 	width: 36px;
-}
+} */
 /* ................. */
 .next h2 {
 	width: auto;
@@ -453,11 +452,9 @@ li svg.icon {
 }
 .title p {
 	width: 340px;
+	font-size: 16px;
 	line-height: 34px;
-	text-align: justify;
-	text-align-last: justify;
 	margin: 0 auto 24px;
-	word-spacing: 2px;
 }
 .buttons {
 	flex-direction: column;
@@ -471,12 +468,12 @@ li svg.icon {
     max-width: 100%;
   }
   .right {
-	margin-left: 21px;
+	padding-top: 24px;
 }
 .hero-img img{
-	width: 52%;
+	width: 100%;
 }
-.rating{
+/* .rating{
     padding: 12px 15px;
     top: 296px;
     left: -15px;
@@ -491,8 +488,8 @@ li svg.icon {
 	padding: 9px 6px;
     bottom: 35.57px;
     right: 300px;
-}
-.online img {
+} */
+/* .online img {
 	width: 36px;
 }
 .online h3 {
@@ -500,7 +497,7 @@ li svg.icon {
 }
 .online p {
 	font-size: 11px;
-}
+} */
 /* ..................Resposive resume start..................... */
 .next h2 {
 	width: auto;
